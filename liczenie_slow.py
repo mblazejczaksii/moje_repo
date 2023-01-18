@@ -1,4 +1,5 @@
 # Usuwanie niepotrzebnych spacji ze słów podanych przez użytkownika a następnie łączenie ich ze sobą
+
 def liczenie_slow():
     print('Podaj liczbę słów...')
     liczba_slow = input(int())
