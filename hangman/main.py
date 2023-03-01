@@ -1,5 +1,6 @@
 # Hangman game
 # Maciej Błażejczak MBQA
+# inspired by 100 days of code challenge
 import random
 from words import word_list
 from hangman_art import stages, logo

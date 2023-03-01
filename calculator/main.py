@@ -1,6 +1,11 @@
+# simple calculator
+# Maciej Błażejczak MBQA
+# inspired by 100 days of code challenge
 from calculator.logo import logo
 
 print(logo)
+
+
 def adding(n1, n2):
     return n1 + n2
 

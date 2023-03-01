@@ -1,3 +1,6 @@
+# Caesar cipher
+# Maciej Błażejczak MBQA
+# inspired by 100 days of code challenge
 from cc_functions import caesar_cipher
 from letters import name
 

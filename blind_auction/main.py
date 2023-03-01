@@ -1,3 +1,6 @@
+# Blind auction
+# Maciej Błażejczak MBQA
+# inspired by 100 days of code challenge
 from title import title
 print(title)
 print("Welcome to the secret auction program.")
