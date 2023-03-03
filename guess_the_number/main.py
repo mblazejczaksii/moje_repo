@@ -53,6 +53,13 @@ def play_game():
                 guess = input("Make a guess:")
         else:
             print("YOU WIN!!!")
+    play_again = input("Do you want to play again? type 'yes' or 'no'...")
+    if play_again == 'yes':
+        play_game()
 
 
-play_game()
+play = input("Do you want to play a game? type 'yes' or 'no'...")
+if play == 'yes':
+    play_game()
+else:
+    print("Bye...")
