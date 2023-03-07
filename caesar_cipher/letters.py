@@ -9,4 +9,3 @@ name = """   _____                              _____ _       _
                                              |_|                     """
 
 letters = string.ascii_lowercase + ' '
-print(letters)

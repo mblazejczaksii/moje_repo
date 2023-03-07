@@ -5,10 +5,14 @@ def liczba_dni_miesiaca(year, month):
     long_months = [1, 3, 5, 7, 8, 10, 12]
     short_months = [4, 6, 9, 11]
 
-    if year % 400 == 0 and year % 4 == 0:
-        leap = 1
-    elif year % 100 == 0:
-        leap = 0
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                leap = 1
+            else:
+                leap = 0
+        else:
+            leap = 1
     else:
         leap = 0
 
@@ -24,6 +28,3 @@ year = int(input("Podaj rok..."))
 month = int(input("Podaj miesiąc..."))
 liczba_dni = liczba_dni_miesiaca(year, month)
 print(f"Liczba dni w miesiącu wynosi: {liczba_dni}")
-
-zmienna = (3 * 3 + 3 / 3 - 3)
-print(zmienna)
