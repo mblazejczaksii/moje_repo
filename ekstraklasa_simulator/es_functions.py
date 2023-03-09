@@ -1,4 +1,4 @@
-# functions fo ekstraklasa_game
+# functions fo ekstraklasa_simulator
 # Maciej Błażejczak MBQA
 import random
 
@@ -53,9 +53,9 @@ def generate_score():
 def count_points(list, point):
     """
     Function to calculate points
-    :param list:
-    :param point:
-    :return:
+    :param list: list of winners or draws
+    :param point: 3 point in case of win, 1 point in case of draw, 1 point in case of failure
+    :return: dictionary sorted by value
     """
     result = {}
     for item in list:
@@ -70,10 +70,10 @@ def count_points(list, point):
 
 def create_final_table(winners, draws):
     """
-    Function to draw a final table
-    :param winners:
-    :param draws:
-    :return:
+    Function to create a final table (winners and draws)
+    :param winners: dictionary with winners
+    :param draws: dictionary with draws
+    :return: dictionary sorted by value
     """
     final_table_list = []
 
@@ -96,16 +96,16 @@ def create_final_table(winners, draws):
 
 def create_losers_table(losers):
     """
-    Function to draw a final table
-    :param losers:
-    :return:
+    Function to create a losers table
+    :param losers: dictionary with losers
+    :return: dictionary sorted by value
     """
     losers_table = []
 
     for key, value in losers.items():
         losers_table.append([key, value])
     losers_table = sorted(losers_table, key=lambda x: x[1], reverse=True)
-    looser = ['THE BIGGEST LOOSER']
+    looser = ['THE BIGGEST LOSER']
     losers_table[0] = losers_table[0] + looser
 
     return losers_table

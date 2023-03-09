@@ -1,7 +1,7 @@
-# generate pairs of games between all ekstraklasa teams (season 2022/23)
+# simulate ekstraklasa season
 # Maciej Błażejczak MBQA
 from tabulate import tabulate
-from eg_functions import generate_games, generate_score, count_points, create_final_table, create_losers_table
+from es_functions import generate_games, generate_score, count_points, create_final_table, create_losers_table
 
 # generate all possible games between teams
 games = generate_games()
@@ -37,7 +37,7 @@ losers_table = create_losers_table(losers=losers)
 # define header names and display final table
 col_names = ["Team", "Points", "Decision"]
 print(tabulate(final_table_list, headers=col_names))
-
+print("\n")
 # define header names and display losers table
-col_names = ["Team", "Looses", "Decision"]
+col_names = ["Team", "Loses", "Decision"]
 print(tabulate(losers_table, headers=col_names))
