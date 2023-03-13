@@ -105,7 +105,7 @@ def create_losers_table(losers):
     for key, value in losers.items():
         losers_table.append([key, value])
     losers_table = sorted(losers_table, key=lambda x: x[1], reverse=True)
-    looser = ['THE BIGGEST LOSER']
+    looser = ['👑 THE BIGGEST LOSER 👑']
     losers_table[0] = losers_table[0] + looser
 
     return losers_table
